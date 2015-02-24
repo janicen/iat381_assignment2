@@ -15,7 +15,7 @@ angular.module('myappApp')
       'Karma'
     ];
 
-    //parse date and time of local computer
+  //parse date and time of local computer
 	$scope.dt = new Date();
 	
   });
