@@ -9,13 +9,9 @@
  */
 angular.module('myappApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.awesomeThings = [];
 
-  //parse date and time of local computer
-	$scope.dt = new Date();
+    //parse date and time of local computer
+	  $scope.dt = new Date();
 	
   });
