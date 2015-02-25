@@ -4,15 +4,11 @@
  * @ngdoc function
  * @name myappApp.controller:AboutCtrl
  * @description
- * # MusicCtrl
+ * # SettingsCtrl
  * Controller of the myappApp
  */
 
 angular.module('myappApp')
-  .controller('MusicCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('SettingsCtrl', function ($scope) {
+    $scope.awesomeThings = [];
   });

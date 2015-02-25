@@ -27,6 +27,10 @@ angular
         templateUrl: 'views/alarm.html',
         controller: 'AlarmCtrl'
       })
+      .when('/settings', {
+        templateUrl: 'views/settings.html',
+        controller: 'SettingsCtrl'
+      })
       .when('/music', {
         templateUrl: 'views/music.html',
         controller: 'MusicCtrl'
