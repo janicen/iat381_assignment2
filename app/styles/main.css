@@ -106,19 +106,17 @@ a:hover {
 ================================================================  */
 
 .settings {
-  margin: 5em 0;
+  margin-top: 5em;
   text-align: center;
 }
 
 .odometer {
+  padding: 4em 2em;
   text-align: center;
   margin-bottom: 5em;
-  /*font-size: 8em;*/
+  color: #9160A1;
+  background-color: #FFFFFF;
 }
-
-/*  .days h3 {
-    padding: 0 .5em;
-  }*/
 
   .days a {
     color: #FFFFFF;
@@ -130,6 +128,19 @@ a:hover {
       opacity: 1;
       padding: .5em;
     }
+
+.set {
+  padding: .5em 2em;
+  margin-top: 5em;
+  font-weight: bold;
+  font-size: 2em;
+  color: #9160A1;
+  background-color: white;
+}
+
+  .set a:hover {
+    color: #664371;
+  }
 
 /* ================================================================ 
   SETTINGS PAGE END 

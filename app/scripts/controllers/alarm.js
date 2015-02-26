@@ -18,5 +18,5 @@ angular.module('myappApp')
     $scope.removeTodo = function (index) {
       $scope.alarms.splice(index, 1);
     };
-    TweenMax.staggerFrom('.alarms', 5, {scale:0.5, opacity:0, delay:0.2, ease:Elastic.easeOut}, 0);
+    TweenMax.staggerFrom('.alarms', 2, {scale:0.5, opacity:0, delay:0.2, ease:Elastic.easeOut}, 5);
   });
