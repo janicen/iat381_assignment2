@@ -11,4 +11,10 @@
 angular.module('myappApp')
   .controller('SettingsCtrl', function ($scope) {
     $scope.awesomeThings = [];
+
+    TweenMax.staggerFrom('body', 1, {scale:0.5, opacity:0, delay:0.2, ease:Strong.easeOut}, 0);
+
+    setTimeout(function(){
+    	odometer.innerHTML = 456;
+	}, 1000);
   });
