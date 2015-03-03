@@ -13,8 +13,6 @@ angular.module('myappApp')
     $scope.awesomeThings = [];
 
     TweenMax.staggerFrom('body', 1, {scale:0.5, opacity:0, delay:0.2, ease:Strong.easeOut}, 0);
+    Draggable.create(".numbers", {type:"scroll", edgeResistance:0.5, lockAxis:true});
 
-    setTimeout(function(){
-    	odometer.innerHTML = 830;
-	}, 1000);
   });

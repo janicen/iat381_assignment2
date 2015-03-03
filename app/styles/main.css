@@ -111,12 +111,24 @@ a:hover {
 }
 
 .odometer {
-  padding: 4em 2em;
+  padding: 2em;
   text-align: center;
   margin-bottom: 5em;
   color: #9160A1;
   background-color: #FFFFFF;
 }
+
+  .numbers {
+    padding: 1em;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+/*    border: 1px solid orange;*/
+  }
+
+  .numbers li {
+    font-size: 8em;
+  }
 
   .days a {
     color: #FFFFFF;
