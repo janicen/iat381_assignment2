@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Crazy Alarm</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Font: Muli -->
+    <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="wrapper" id="wrapper">
+            
+            <!-- Box to shut off Alarm -->
+            <div id="box1" class="box">&#9824;</div>
+            <div id="box2" class="box">&#9827;</div>
+            <div id="box3" class="box">&#9829;</div>
+            <div id="box4" class="box">&#9830;</div>
+            <div id="box5" class="box">&#9829;</div>
+            <div id="box6" class="box">&#9829;</div>
+            <div id="box7" class="box">&#9824;</div>
+            <div id="box8" class="box">&#9827;</div>
+            <div id="box9" class="box">&#9824;</div>
+            <div id="box10" class="box">&#9829;</div>
+
+            <div class="constrain-wrapper" id ="constrain-wrapper">
+                <!-- Box to shut off Alarm -->
+                <div id="box-draggable" class="box-draggable">DRAG ME!</div>
+            </div>
+
+            <!-- Time -->
+            <div class="time"></div>
+            <!-- Alarm -->
+            <div class="alarm">
+                <div class="hour" id="hour"></div>
+                <div class="min" id="min"></div>
+                <div class="second" id="second"></div>
+            </div>
+            
+            <!-- Controller -->
+            
+            <!-- Left Btn -->
+            <input id="alarm" name="controls" type="radio" checked="checked" />
+            <label for="alarm" class="btn label-alarm" id="alarmBtn">Alarm</label>
+
+            <input id="time" name="controls" type="radio" />
+            <label for="time" class="btn label-time active" id="timeBtn">Time</label>
+            
+            <!-- Right Btn -->
+            <input id="sethour" name="controls2" type="radio" />
+            <label for="sethour" class="btn2 label-sethour" id="setHourBtn">SET HOUR</label>
+            
+            <input id="setmin" name="controls2" type="radio" checked="checked" />
+            <label for="setmin" class="btn2 label-setmin" id="setMinBtn">SET MINUTE</label>
+        </div>
+        
+        
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <!-- Greensock -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/utils/Draggable.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/plugins/CSSPlugin.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+    <!-- Others -->
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

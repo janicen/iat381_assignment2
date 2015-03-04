@@ -1,0 +1,311 @@
+/*
+ *
+ * Font Import
+ *
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Economica:400,700);
+
+/*
+ *
+ * Base CSS Stylesheet
+ *
+ */
+
+ html, body {
+	font-family: 'Economica', 'Muli', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #ffffff;
+}
+
+html, body, ul, ol, li, form, fieldset, legend,
+h1, h2, h3, h4, h5, h6, p {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ *
+ * Styling for Time
+ *
+ */
+
+.wrapper {
+	width: 310px;
+	height: 690px;
+	margin: 0 auto;
+	background-color: #9160A1;
+	position: relative;
+	border: 5px solid #9160A1;
+	transition: border 0.5s ease-in-out;
+}
+
+.constrain-wrapper {
+	width: 320px;
+	height: 550px;
+	position: absolute;
+}
+
+.time{
+	font-size:76px;
+	color: white;
+	position:relative;
+	top: calc(50% - 28px);
+	left: calc(50% - 33px);
+	-webkit-transform:  translatex(-65px) translatey(-35px);
+	opacity: 1;
+}
+
+.alarm{
+	font-size:76px;
+	color: white;
+	position:relative;
+	top: calc(50% - 28px);
+	left: calc(50% - 33px);
+	-webkit-transform:  translatex(-65px) translatey(-122px);
+	opacity: 0;
+}
+
+/*
+ *
+ * Buttons
+ *
+ */
+
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 30px;
+	padding: 14px 0;
+	text-transform: uppercase;
+	line-height: 1.5rem;
+	width: 151px;
+	position: absolute;
+	left: 79.5px;
+	top: 600px;
+	z-index: 9999;
+	text-align: center;
+	transform: translate(0px, 0px);
+	-webkit-transform: translate(0px, 0px);
+	-webkit-transition: -webkit-transform 5s ease-in;
+	transition: transform 5s ease-in;
+
+  }
+
+.btn, .btn:focus {
+	background: transparent;
+	border: 2px solid #eee;
+	border-radius: 6px;
+	color: #eee;
+}
+
+.btn:hover {
+    background: #eee;
+    color: #0087dc;
+    border: 2px solid #eee;
+}
+
+.btn2 {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 30px;
+	padding: 14px 0;
+	text-transform: uppercase;
+	line-height: 1.5rem;
+	width: 151px;
+	position: absolute;
+	left:calc(50% + 1.5px);
+	top: 600px;
+	z-index: 9999;
+	text-align: center;
+  }
+
+.btn2, .btn2:focus {
+	background: transparent;
+	border: 2px solid #eee;
+	border-radius: 6px;
+	color: #eee;
+}
+
+.btn2:hover {
+    background: #eee;
+    color: #0087dc;
+    border: 2px solid #eee;
+}
+
+.translate-animation {
+	transform: translate(-76px, 0px);
+	-webkit-transform: translate(-81px, 0px);
+	-webkit-transition: -webkit-transform 5s ease-in;
+	transition: transform 5s ease-in;
+}
+
+.label-sethour, .label-setmin {
+	visibility: hidden;
+	/*transition: all 0.15s ease-in-out;*/
+}
+
+.active {
+	background: #eee;
+	color: #9160A1;
+	visibility: visible;
+	transition: all 0.5s ease-in-out;
+}
+
+.active2 {
+	background: #B27AC4;
+	color: #eee;
+}
+
+#alarm:checked + .label-alarm,
+#time:checked + .label-time{ display: none; }
+
+#sethour:checked + .label-sethour,
+#setmin:checked + .label-setmin { display: none; }
+
+input[name="controls"] { display: none; }
+input[name="controls2"] { display: none; }
+
+/*
+ *
+ * Box to shut off Alarm
+ *
+ */
+
+ .box {
+	position:absolute;
+	width: 44%;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 20px;
+	color: white;
+	opacity: 0;
+	transition: opacity 0.7s ease-in-out;
+}
+
+#box1 {
+	/*background-color: #B072C4;*/
+	outline: 1px solid #B072C4;
+  	top: 1.5%;
+  	left: 4%;
+}
+#box2 {
+	/*background-color: #B072C4;*/
+	outline: 1px solid #B072C4;
+	top: 1.5%;
+  	left: 52%;
+}
+#box3 {
+	/*background-color: #B072C4;*/
+	outline: 1px solid #B072C4;
+  	top: 14.5%;
+  	left: 4%;
+}
+#box4 {
+	/*background-color: #B072C4;*/
+	outline: 1px solid #B072C4;
+	top: 14.5%;
+  	left: 52%;
+}
+#box5 {
+	/*background-color: #B072C4;*/
+	outline: 1px solid #B072C4;
+	top: 27.5%;
+  	left: 4%;
+}
+#box6 {
+	/*background-color: #B072C4;*/
+	outline: 1px solid #B072C4;
+	top: 27.5%;
+  	left: 52%;
+}
+#box7 {
+	/*background-color: #B072C4;*/
+	outline: 1px solid #B072C4;
+	top: 53.5%;
+  	left: 4%;
+}
+#box8 {
+	/*background-color: #B072C4;*/
+	outline: 1px solid #B072C4;
+	top: 53.5%;
+  	left: 52%;
+}
+#box9 {
+	/*background-color: #B072C4;*/
+	outline: 1px solid #B072C4;
+	top: 66.5%;
+  	left: 4%;
+}
+#box10 {
+	/*background-color: #B072C4;*/
+	outline: 1px solid #B072C4;
+	top: 66.5%;
+  	left: 52%;
+}
+
+/*
+ *
+ * Box to shut off Alarm
+ *
+ */
+
+.box-draggable {
+	position:absolute;
+	width: 44%;
+	left: 28%;
+	top: 66.5%;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 20px;
+	color: white;
+	border-radius:10px;
+	background: #724082;
+	opacity: 0;
+	transition: opacity 0.7s ease-in-out;
+}
+
+.highlight {
+  border: 2px solid white;
+  width: 44%;
+  height: 76px;
+  line-height: 76px;
+}
+
+/*
+ *
+ * Setting the Alarm
+ *
+ */
+
+.hour {
+	float: left;
+	transition: all 0.7s ease-in-out;
+}
+
+.min {
+	float: left;
+	transition: all 0.7s ease-in-out;
+}
+
+.second {
+	float: left;
+	transition: all 0.7s ease-in-out;
+}
+
+.second:after {
+	clear: both;
+	content: "";
+}
+
+.hour:hover, .min:hover {
+	cursor: pointer;
+}
+
+.time-deactive {
+	color: #AAA5AD;
+}
